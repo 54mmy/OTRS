@@ -1,0 +1,50 @@
+<Alloy>
+	<Collection src="contacts"></Collection>
+	<Window class="container">
+		<View id="leftView" backgroundColor="white">
+			<View id="head">
+				<TableView separatorColor="#A2A3BB">
+					<TableViewRow id="circularView" height="120">
+						<ImageView height="50" width="50" borderRadius="52" borderWidth="2dp" borderColor="#000" image="/prof.png"></ImageView>
+						<Label color="#000807" top="90">Swapnil Singh</Label>
+					</TableViewRow>
+					<TableViewRow height="40" backgroundColor="#4285f4">
+						<Label color="white">List</Label>
+					</TableViewRow>
+					<TableViewRow height="40" backgroundColor="#4285f4">
+						<Label color="white">Add</Label>
+					</TableViewRow>
+				</TableView>
+			</View>
+		</View>
+		<View id="centerView" backgroundColor="white">
+			<ListView id="listView" defaultItemTemplate="template" separatorColor="#A2A3BB" separatorHeight="1dp">
+
+				<!-- The Templates tag sets the ListView's templates property -->
+
+				<Templates>
+
+					<!-- Define your item templates within the Templates tags or use the
+					Require tag to include a view that only contains an ItemTemplate -->
+
+					<ItemTemplate name="template">
+						<Label bindId="fname" id="fname" color="#000807"/>
+						<Label bindId="lname" id="lname" color="#000807"/>
+						<Label bindId="mobile" id="mobile" color="#000807"/>
+					</ItemTemplate>
+
+				</Templates>
+				<ListSection dataCollection="contacts">
+
+					<!-- You can specify any ListItem or ListDataItem properties in ListItem -->
+
+					<!-- Specify data to bind to the item template with inline attributes
+					defined as <bindId>:<Ti.UI.Component.property> -->
+
+					<ListItem height="80" fname:text="{firstname}" lname:text="{lastname}" mobile:text="{contact}" />
+				</ListSection>
+
+			</ListView>
+		</View>
+	</Window>
+</Alloy>

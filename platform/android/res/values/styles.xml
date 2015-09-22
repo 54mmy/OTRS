@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="Theme.Appcelerator" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+      <item name="colorPrimary">@color/primary</item>
+      <item name="colorPrimaryDark">@color/primaryDark</item>      
+      <item name="colorAccent">@color/primaryDark</item>
+      <item name="colorControlHighlight">@color/colorHighlight</item>      
+      <item name="colorControlActivated">@color/colorActivated</item>      
+      <item name="android:navigationBarColor">@color/primary</item>
+      <item name="android:statusBarColor">@color/primaryDark</item>
+      <item name="android:textColorPrimary">@color/textPrimary</item>
+    </style>
+    <color name="colorActivated">#4285f4</color>
+    <color name="primary">#4285f4</color>
+    <color name="primaryDark">#005abc</color>
+    <color name="textPrimary">#000</color>
+    <color name="accent">#4285f4</color>
+    <color name="colorHighlight">#005abc</color>
+</resources>

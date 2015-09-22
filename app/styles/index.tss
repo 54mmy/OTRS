@@ -1,0 +1,26 @@
+".container": {
+	backgroundColor:"white",
+	exitOnClose: true
+}
+
+"#fname":{
+	left: '60dp', top: 0
+}
+
+"#lname":{
+	left: '60dp', top: '25dp'
+}
+
+"#mobile":{
+	left: '60dp', top: '50dp'
+}
+
+"#circularView":{
+	width: 102,
+    height: 102,
+    left: 60,
+    backgroundColor: '#fff',
+    borderColor: '#000',
+    borderRadius: 52,
+    borderWidth: 2
+}

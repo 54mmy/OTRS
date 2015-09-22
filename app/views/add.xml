@@ -1,0 +1,8 @@
+<Alloy>
+	<Window id="add" backgroundColor="white">
+		<TextField id="fName" color="black" hintText="First Name..." hintTextColor="grey" width="200dp" top="30"></TextField>
+		<TextField id="lName" color="black" hintText="Last Name..." hintTextColor="grey" width="200dp" top="90"></TextField>
+		<TextField id="mNumber" color="black" hintText="Contact No..." hintTextColor="grey" width="200dp" top="150"></TextField>
+		<Button id="submit" color="grey" width="100dp" top="220" onClick="addItem">Submit</Button>
+	</Window>
+</Alloy>
